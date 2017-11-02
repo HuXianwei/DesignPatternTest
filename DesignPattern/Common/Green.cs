@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPattern.CreationalPattern
+namespace DesignPattern.Common
 {
     /// <summary>
-    /// 工厂模式
+    /// 绿色
     /// </summary>
-    internal class FactoryPattern
+    class Green : IColor
     {
-        public interface Shape
+        public void Fill()
         {
-
+            Console.WriteLine("Fill Green!");
         }
-        
     }
 }

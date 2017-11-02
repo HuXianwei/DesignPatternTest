@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPattern.TestDemo;
+using System;
 
 namespace DesignPattern
 {
@@ -9,7 +10,14 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            /********************创建型模式测试*******************/
+            //测试工厂模式
+            //ShapeFactoryPatternDemo.Test();
+            //测试抽象工厂模式
+            //AbstractFactoryPatternDemo.Test();
+            //测试单例模式
+            SingletonPatternDemo.Test();
+            Console.ReadKey();
         }
     }
 }
