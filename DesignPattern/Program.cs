@@ -16,7 +16,9 @@ namespace DesignPattern
             //测试抽象工厂模式
             //AbstractFactoryPatternDemo.Test();
             //测试单例模式
-            SingletonPatternDemo.Test();
+            //SingletonPatternDemo.Test();
+            //测试建造者模式
+            BuilderPatternDemo.Test();
             Console.ReadKey();
         }
     }
