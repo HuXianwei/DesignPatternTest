@@ -7,11 +7,22 @@ namespace DesignPattern.Common
     /// <summary>
     /// 圆形
     /// </summary>
-    public class Circle : IShape
+    internal class Circle : IShape
     {
-        public void Draw()
+        public Circle()
         {
-            Console.WriteLine("Draw Circle!");
+            Remark = "Draw Circle!";
+        }
+        public string Remark { get; set; }
+
+        public IShape Clone()
+        {
+            return (Circle)MemberwiseClone();
+        }
+
+        public void Draw() 
+        {
+            Console.WriteLine(Remark);
         }
     }
 }

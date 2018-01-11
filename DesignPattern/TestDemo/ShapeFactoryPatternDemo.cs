@@ -1,5 +1,6 @@
 ﻿using DesignPattern.Common;
 using DesignPattern.CreationalPattern;
+using DesignPattern.CreationalPattern.FactoryAddtion;
 using System;
 using System.Collections.Generic;
 using System.Text;

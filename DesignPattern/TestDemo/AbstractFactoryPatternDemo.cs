@@ -11,17 +11,34 @@ namespace DesignPattern.TestDemo
     {
         internal static void Test()
         {
-            //颜色、形状工厂
-            AbstractFactoryPattern factory = new BlueSquareFactory();
-            factory.GetColor(0).Fill();
-            factory.GetShape(0).Draw();
-            factory = new RedCircleFactory();
-            factory.GetColor(0).Fill();
-            factory.GetShape(0).Draw();
-            //自由配置颜色和形状
-            factory = new ColorShapeFactory();
-            factory.GetColor(Enum.EColorType.Green).Fill();
-            factory.GetShape(Enum.EShapeType.Rectangle).Draw();
+            /********生成圆形logo*********/
+            Console.WriteLine("生成圆形logo");
+            //圆形工厂
+            AbstractFactoryPattern factory = new CircleFactory();
+            //生成圆形绿色logo
+            Console.WriteLine("生成圆形绿色logo");
+            var logo = factory.CreateGreenLogo();
+            logo.Color.Fill();
+            logo.Shape.Draw();
+            //生成圆形红色logo
+            Console.WriteLine("生成圆形红色logo");
+            logo = factory.CreateRedLogo();
+            logo.Color.Fill();
+            logo.Shape.Draw();
+            /********生成正方形logo*********/
+            Console.WriteLine("生成正方形logo");
+            //正方形工厂
+            factory = new SquareFactory();
+            //生成正方形绿色logo
+            Console.WriteLine("生成正方形绿色logo");
+            logo = factory.CreateGreenLogo();
+            logo.Color.Fill();
+            logo.Shape.Draw();
+            //生成正方形红色logo
+            Console.WriteLine("生成正方形红色logo");
+            logo = factory.CreateRedLogo();
+            logo.Color.Fill();
+            logo.Shape.Draw();
         }
     }
 }

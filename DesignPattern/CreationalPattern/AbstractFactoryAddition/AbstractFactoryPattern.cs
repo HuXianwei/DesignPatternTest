@@ -15,8 +15,8 @@ namespace DesignPattern.AbstractFactoryAddition
     /// </summary>
     abstract class AbstractFactoryPattern
     {
-        internal abstract IColor GetColor(EColorType colorType);
+        internal abstract LogoProduct CreateRedLogo();
 
-        internal abstract IShape GetShape(EShapeType shapeType);
+        internal abstract LogoProduct CreateGreenLogo();
     }
 }

@@ -9,6 +9,11 @@ namespace DesignPattern.Common
     /// </summary>
     class Red : IColor
     {
+        public IColor Clone()
+        {
+            return MemberwiseClone() as Red;
+        }
+
         public void Fill()
         {
             Console.WriteLine("Fill Red!");

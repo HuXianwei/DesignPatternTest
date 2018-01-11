@@ -9,9 +9,20 @@ namespace DesignPattern.Common
     /// </summary>
     class Square : IShape
     {
+        public Square()
+        {
+            Remark = "Draw Square!";
+        }
+        public string Remark { get; set; }
+
+        public IShape Clone()
+        {
+            return (Square)MemberwiseClone();
+        }
+
         public void Draw()
         {
-            Console.WriteLine("Draw Square!");
+            Console.WriteLine(Remark);
         }
     }
 }

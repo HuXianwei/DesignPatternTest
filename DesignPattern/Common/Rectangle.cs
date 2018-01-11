@@ -5,11 +5,22 @@ namespace DesignPattern.Common
     /// <summary>
     /// 长方形
     /// </summary>
-    public class Rectangle : IShape
+    internal class Rectangle : IShape
     {
+        public Rectangle()
+        {
+            Remark = "Draw Rectangle!";
+        }
+        public string Remark { get; set; }
+
+        public IShape Clone()
+        {
+            return (Rectangle)MemberwiseClone();
+        }
+
         public void Draw()
         {
-            Console.WriteLine("Draw Rectangle!");
+            Console.WriteLine(Remark);
         }
     }
 }

@@ -7,11 +7,16 @@ namespace DesignPattern.Common
     /// <summary>
     /// 颜色
     /// </summary>
-    internal interface IColor
+    public interface IColor
     {
         /// <summary>
-        /// 涂色
+        /// 涂色方法
         /// </summary>
         void Fill();
+
+        /// <summary>
+        /// 克隆方法
+        /// </summary>
+        IColor Clone();
     }
 }

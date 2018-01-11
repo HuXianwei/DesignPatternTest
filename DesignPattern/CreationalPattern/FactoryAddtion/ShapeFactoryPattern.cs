@@ -8,7 +8,7 @@ using System.Text;
 /// 应用场景： 设计数据库连接时不知道具体连接哪一种数据库，根据具体实施选择连接数据库的类型
 /// </summary>
 
-namespace DesignPattern.CreationalPattern
+namespace DesignPattern.CreationalPattern.FactoryAddtion
 {
     /// <summary>
     /// 工厂模式

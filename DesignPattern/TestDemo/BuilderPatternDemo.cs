@@ -18,7 +18,7 @@ namespace DesignPattern.TestDemo
             aProduct.Shape.Draw();
             aProduct.Color.Fill();
             Console.WriteLine(aProduct.Size);
-            //提出建造A型logo产品需求(创建A型logo产品建造者)
+            //提出建造B型logo产品需求(创建B型logo产品建造者)
             BLogoProductBuilder bBuilder = new BLogoProductBuilder();
             var bProduct = director.Construct(bBuilder);
             bProduct.Shape.Draw();

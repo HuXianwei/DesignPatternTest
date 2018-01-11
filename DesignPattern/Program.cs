@@ -1,5 +1,6 @@
 ﻿using DesignPattern.TestDemo;
 using System;
+using System.Text;
 
 namespace DesignPattern
 {
@@ -18,7 +19,9 @@ namespace DesignPattern
             //测试单例模式
             //SingletonPatternDemo.Test();
             //测试建造者模式
-            BuilderPatternDemo.Test();
+            //BuilderPatternDemo.Test();
+            //测试原型模式
+            PrototypePatternDemo.Test();
             Console.ReadKey();
         }
     }
